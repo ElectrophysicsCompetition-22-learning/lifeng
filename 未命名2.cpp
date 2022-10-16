@@ -5,22 +5,22 @@
 
 
 float f(float x,float y,float z)
-/*{
+{
 float a = x*x+9.0f/4.0f*y*y+z*z-1;
 return a*a*a-x*x*z*z*z-9.0f/80.0f*y*y*z*
-}*/
+}
 
 
-   /*float h(fioat x,fioat z)
+   float h(fioat x,fioat z)
 {
    for(fioat y=1.0f;y>=0.0f;y-=0.001f)
    if(f(x,y,z)<=0.0f)
    return y;
    return 0.0f
-}*/
+}
 
 
-/*void main()*/
+void main()
 {
 	HANDLE o=GetStdHandle[STD_OUTPUT_HNADLE];
 _TCHAR buffer[25][80]={_T("")};
@@ -35,7 +35,7 @@ for(float t=0.0f;;t+=0.1f)
 	for(float z=1.3f;z>-1.2f;z-=0.1f)
 {
 	_TCHAR*p=&buffer[sy++][0];
-	/*float tz=z*(12f-a);*/
+	float tz=z*(12f-a);
 	for(float x=-1.5f;x<1.5f;x+=0.05f)
 {
 	float tx=x*(1.2f+a);
